@@ -1,0 +1,106 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+      {% load static %}
+    <link rel="icon" href="{% static 'images/about2.png' %}">
+       <link rel="stylesheet" href="{% static 'css/bootstrap.min.css' %}">
+    <script src="{% static 'js/bootstrap.min.js' %}"></script>
+    <title>About</title>
+     <style>
+        table{
+            border: 2px solid white; 
+        }
+        table,th,td{
+            border: 2px solid white;
+            border-radius: 5px;
+        }
+        table{
+            height: 400px;
+            width: 75%;
+            margin: auto;
+            background-color: #bde194;
+            
+        }
+        thead{
+            background-color: #5ee55e;
+        }
+        td{
+            padding-left: 100px;
+        }
+    </style>
+  
+</head>
+<body>
+
+<a href="{% url 'home' %}" class="btn btn-primary" >Home</a>
+<a href="{% url 'form' %}" class="btn btn-danger">Form</a>
+
+
+
+<table>
+    
+    <thead>
+    <tr>
+        <th>Product ID</th>
+        <th>Product Name</th>
+        <th>Product Quality</th>
+        <th>Product Quantity</th>
+    </tr>
+    </thead>
+    
+  
+    <tbody>
+    
+    <tr>
+        <td>1</td>
+        <td>Wheat</td>
+        <td>Good</td>
+        <td>200 Bags</td>    
+    </tr>
+    
+    
+    <tr>
+        <td>2</td>
+        <td>Rice</td>
+        <td>Good</td>
+        <td>250 Bags</td>    
+    </tr>
+    
+    <tr>
+        <td>3</td>
+        <td>Sugar</td>
+        <td>Good</td>
+        <td>200 Bags</td>    
+    </tr>
+    
+    <tr>
+        <td>3</td>
+        <td>Sugar</td>
+        <td>Good</td>
+        <td>200 Bags</td>    
+    </tr>
+    
+    <tr>
+        <td>3</td>
+        <td>Sugar</td>
+        <td>Good</td>
+        <td>200 Bags</td>    
+    </tr>
+    
+    <tr>
+        <td>3</td>
+        <td>Sugar</td>
+        <td>Good</td>
+        <td>200 Bags</td>    
+    </tr>
+    
+    </tbody>
+    
+</table>
+
+</body>
+</html>
